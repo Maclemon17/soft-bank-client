@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./components/dashboard/Dashboard";
+import Footer from "./components/globalComp/Footer";
+import Navbar from "./components/globalComp/Navbar";
+import Home from "./components/pages/home/Home";
+import SignIn from "./components/pages/signin/SignIn";
+import SignUp from "./components/pages/signup/SignUp";
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [loggedIn, setLoggedIn] = useState(localStorage.getItem("authenticated"));
+	console.log(loggedIn)
+	return (
+		<>
+			<Navbar auth={loggedIn} />
+			<Routes>
+				<Route path="/" element={ <Home /> } />
+				<Route path="/register" element={ <SignUp /> } />
+				<Route path="/login" element={ <SignIn /> } />
+				<Route path="/dashboard" element={ <Dashboard /> } />
+			</Routes>
+			<Footer />
+			{/* <SignIn /> */}
+
+		</>
+	);
 }
 
 export default App;

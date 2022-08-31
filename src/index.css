@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/images/grow-money.jpg') no-repeat center center/cover ;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-img1 {
+  background: url(../src/assets/images/atm.jpg) no-repeat center center/cover;
+  
+}
+
+#card-img2 {
+  background: url(../src/assets/images/security.jpg) no-repeat center center/cover;
+  
+  object-fit: contain;
+}
+
+#card-img3 {
+  background: url(../src/assets/images/customer-care.jpg) no-repeat center center/cover;
+}
+
+.account-pic {
+  object-fit: cover;
+  object-position: center;
+  height: 120px;
+  width: 120px;
+}
+
+.transaction {
+  width: 5rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-img {
+  width: 45px; 
+  height: 45px;
+}
