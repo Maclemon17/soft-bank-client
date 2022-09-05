@@ -6,23 +6,23 @@ const Transactions = () => {
     return (
         <div className='row container justify-content-around bg-light py-5'>
             <div class="border border-light transaction col-sm-3">
-                <img src={transfer} class="card-img-top" alt="Sunset Over the Sea" />
+                <img src={transfer} class="card-img-top transactions-icon" alt="Transfer icon" />
                 <div class="card-body">
-                    <p class="card-text text-center h3 mt-1">Transfer</p>
+                    <p class="card-text h3 mt-1">Transfer</p>
                 </div>
             </div>
 
             <div class="border border-light transaction col-sm-3 text-center">
-                <img src={withdraw} class="card-img-top" alt="Sunset Over the Sea" />
+                <img src={withdraw} class="card-img-top transactions-icon" alt="withdraw icon" />
                 <div class="card-body">
-                    <p class="card-text text-cente h3 mt-1">Withdraw</p>
+                    <p class="card-text h3 mt-1">Withdraw</p>
                 </div>
             </div>
 
             <div class="border border-light transaction col-sm-3">
-                <img src={wallet} class="card-img-top" alt="Sunset Over the Sea" />
+                <img src={wallet} class="card-img-top transactions-icon" alt="wallet icon" />
                 <div class="card-body">
-                    <p class="card-text text-cente h3 mt-1">Wallet</p>
+                    <p class="card-text h3 mt-1">Wallet</p>
                 </div>
             </div>
         </div>
